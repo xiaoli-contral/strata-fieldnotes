@@ -17,7 +17,7 @@ function stamp(){
 
 function escapeSSML(text){return text.replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 
-export async function synthesizeSpeech(text,{name='zh-CN-XiaoxiaoNeural',style='gentle',rate='-12%',pitch='-2st'}={}){
+export async function synthesizeSpeech(text,{name='zh-CN-XiaoxiaoNeural',style='gentle',rate='-12%',pitch='-2st',xmlLang='zh-CN'}={}){
   const spoken=escapeSSML(String(text||'').trim());
   if(!spoken)throw new Error('没有可朗读的句子');
   const connection=crypto.randomUUID().replaceAll('-','');
@@ -34,7 +34,7 @@ export async function synthesizeSpeech(text,{name='zh-CN-XiaoxiaoNeural',style='
     socket.addEventListener('open',()=>{
       socket.send(`X-Timestamp:${time}\r\nContent-Type:application/json; charset=utf-8\r\nPath:speech.config\r\n\r\n{"context":{"synthesis":{"audio":{"metadataoptions":{"sentenceBoundaryEnabled":false,"wordBoundaryEnabled":false},"outputFormat":"audio-24khz-48kbitrate-mono-mp3"}}}}`);
       const inner=style?`<mstts:express-as style="${style}"><prosody rate="${rate}" pitch="${pitch}">${spoken}</prosody></mstts:express-as>`:`<prosody rate="${rate}" pitch="${pitch}">${spoken}</prosody>`;
-      const ssml=`<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="zh-CN"><voice name="${name}">${inner}</voice></speak>`;
+      const ssml=`<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="${xmlLang}"><voice name="${name}">${inner}</voice></speak>`;
       socket.send(`X-RequestId:${crypto.randomUUID()}\r\nContent-Type:application/ssml+xml\r\nX-Timestamp:${time}\r\nPath:ssml\r\n\r\n${ssml}`);
     });
     socket.addEventListener('message',async event=>{
