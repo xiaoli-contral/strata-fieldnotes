@@ -1,0 +1,22 @@
+{
+  "status": "ready",
+  "operationId": "63b6df05-f177-4110-a7fc-d3fee82e171d",
+  "mediaAssetId": "b6031135-e6f9-436c-a0be-eb8f72f4551d",
+  "model": "marble-1.1-plus",
+  "prompt": "Wide natural river terrace environment only, matching the uploaded image. Open compacted earth in the foreground for separately placed interactive 3D objects; low earthen bank to the left, river to the right, distant woodland, overcast daylight. No buildings, roofs, huts, pots, people, tools, paths or modern objects anywhere. Keep the near field free of obstacles. This is an educational landscape interpretation, not a claim of prehistoric appearance.",
+  "sourceImage": "/generated/left-river-environment-v1.png",
+  "startedAt": "2026-10-03T15:14:21.860Z",
+  "estimatedCredits": "1,580–3,080",
+  "attempts": [],
+  "progress": "World generation completed successfully",
+  "worldId": "9ac8820c-42d6-4e11-8bca-a477f136ce1a",
+  "costCredits": 3080,
+  "marbleUrl": "https://marble.worldlabs.ai/world/9ac8820c-42d6-4e11-8bca-a477f136ce1a",
+  "metricScaleFactor": 1.7767831087112427,
+  "groundPlaneOffset": 1.0708882808685303,
+  "thumbnail": "/generated/left-river-world-thumb.jpg",
+  "pano": "/generated/left-river-world-pano.jpg",
+  "splat": "/generated/left-river-world-splat.spz",
+  "collider": "/generated/left-river-world-collider.glb",
+  "completedAt": "2026-10-03T15:25:02.206Z"
+}

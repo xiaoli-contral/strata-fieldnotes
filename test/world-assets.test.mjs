@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import * as THREE from 'three';
+
+test('Plus 场景有对应碰撞网格，成人视角可在原点附近找到地面',async()=>{
+  const state=JSON.parse(await readFile(new URL('../outputs/left-generation.json',import.meta.url)));
+  const world=state.plusWorld;
+  assert.equal(world.status,'ready');
+  assert.equal(world.collider,'/generated/left-world-plus-collider.glb');
+  assert.ok(world.metricScaleFactor>0);
+  const bytes=await readFile(new URL('../outputs/left-world-plus-collider.glb',import.meta.url));
+  const collider=(await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'')).scene;
+  collider.scale.setScalar(world.metricScaleFactor);
+  collider.quaternion.set(1,0,0,0);
+  collider.position.y=world.groundPlaneOffset;
+  collider.traverse(o=>{if(o.isMesh){o.material.side=THREE.DoubleSide;o.material.visible=false;}});
+  collider.updateMatrixWorld(true);
+  const ray=new THREE.Raycaster(new THREE.Vector3(0,10,0),new THREE.Vector3(0,-1,0));
+  const ground=ray.intersectObject(collider,true)[0]?.point.y;
+  assert.ok(Number.isFinite(ground),'场景原点附近应存在可碰撞地面');
+  assert.ok(ground>-3&&ground<3,'地面应落在按官方元数据换算的米制高度附近');
+  ray.set(new THREE.Vector3(0,10,-3),new THREE.Vector3(0,-1,0));
+  const potGround=ray.intersectObject(collider,true)[0]?.point.y;
+  assert.ok(Number.isFinite(potGround),'入口前方的陶罐示意位置必须有碰撞地面');
+  const camera=new THREE.PerspectiveCamera(70,1.5,.05,1000);
+  camera.position.set(0,ground+1.6,0);
+  camera.rotation.order='YXZ';camera.rotation.set(-.28,0,0);
+  camera.updateMatrixWorld();
+  const potCenter=new THREE.Vector3(0,potGround+.35,-3).project(camera);
+  assert.ok(Math.abs(potCenter.x)<.9&&Math.abs(potCenter.y)<.9&&potCenter.z<1,'陶罐示意位置应在默认视野中');
+});

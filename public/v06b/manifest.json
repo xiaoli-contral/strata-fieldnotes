@@ -1,0 +1,136 @@
+{
+  "source": "https://legislature-menus-marijuana-hazardous.trycloudflare.com/v06b/",
+  "retrievedAt": "2026-10-05T19:24:10.515Z",
+  "files": [
+    {
+      "file": "map/index.html",
+      "bytes": 568,
+      "sha256": "851d4b111dc6d8d1a337224aa81624ebdb4458eebaf44dd911c5a711469d1741"
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 294,
+      "sha256": "a16e1626512de6864b3e81ff54f8d064938a3a26db6af674492710de7771e7a4"
+    },
+    {
+      "file": "assets/map-Bz2mJyq1.js",
+      "bytes": 414191,
+      "sha256": "624c888ebe26e452ccf20f22bdee270f01168fec43323a5305402a7f190a63bd"
+    },
+    {
+      "file": "assets/map-CVYB87qP.css",
+      "bytes": 19420,
+      "sha256": "3418d70719d133684c6a780ca67aa748f12e618aded66cc437c33b12d11144b1"
+    },
+    {
+      "file": "assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "bytes": 711,
+      "sha256": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0"
+    },
+    {
+      "file": "assets/CaveScene-D-fK-yaT.js",
+      "bytes": 878,
+      "sha256": "c73c63fd336b021c23fdbe56e6ad15f7b33ac11425b1b95bb4ee76d4bc09d306"
+    },
+    {
+      "file": "assets/AiPlateScene-BxO_G0g0.js",
+      "bytes": 2411,
+      "sha256": "5a4fab6ddbf790177160b8c78b218aa09b21251cb0b5d6ac38dc24ca0d166ff7"
+    },
+    {
+      "file": "assets/ZuojiaScene-DwCueqyE.js",
+      "bytes": 895,
+      "sha256": "0968786b38b4f213618fcea9d9a91ad099d4448d8f259d40fed4eaffeb787031"
+    },
+    {
+      "file": "assets/XingchengScene-DGJvW7Ud.js",
+      "bytes": 1044,
+      "sha256": "08cfe569f863cd702719406b533a808f30ed0b35ce994ab3f69baaf4588d91cc"
+    },
+    {
+      "file": "assets/HoutaipingScene-Ca851Bfh.js",
+      "bytes": 1052,
+      "sha256": "1cbcadbaa1b2dfe33efda1b9934034f26e8d21eb017c594b19bdbbb2f27f30c1"
+    },
+    {
+      "file": "cave-ai/overview.png",
+      "bytes": 1141946,
+      "sha256": "6de04d33d89327e076262549fabdec2fa3580a9fbb496df4dbf83700ab32c873"
+    },
+    {
+      "file": "cave-ai/mouth.png",
+      "bytes": 1113312,
+      "sha256": "0c11676fbc2440dfffe76190c16471954a94b3c758447dae6e50cbdf1d0a2aee"
+    },
+    {
+      "file": "cave-ai/tools.png",
+      "bytes": 1263692,
+      "sha256": "403cd0a8abb94e19b725fdb1a4e0d37677bb142a893a0c5f0efe85719db64222"
+    },
+    {
+      "file": "cave-ai/bones.png",
+      "bytes": 878872,
+      "sha256": "4bf8e7d42f64eb0365e06040037b873dad9d4ef9630bb0c9a3f4a27683cd5516"
+    },
+    {
+      "file": "zuojia-ai/overview.png",
+      "bytes": 1332515,
+      "sha256": "7565a95748c339dfb5eac992ee6bc80eeec0f0f959eaa6d632448cab75605661"
+    },
+    {
+      "file": "zuojia-ai/dwell.png",
+      "bytes": 1236691,
+      "sha256": "8904d82e7657de42a69004c7e673e439ef966c2cfa43ae20c7cb287aa03ec921"
+    },
+    {
+      "file": "zuojia-ai/dragon.png",
+      "bytes": 1115894,
+      "sha256": "0d247cd4c471c8141e042c3604b31adc91a7a38cb4a461afb6403898bbcdbb18"
+    },
+    {
+      "file": "zuojia-ai/pots.png",
+      "bytes": 1186038,
+      "sha256": "7f34e1c4f5a0b077f52cb07f41e2f9b558708c0afa09bf09fbb021cd99b908df"
+    },
+    {
+      "file": "xing-ai/overview.png",
+      "bytes": 1469046,
+      "sha256": "a45d81056c562c253ffc50f5d5dcfb9520e446225a2124b5bc6e2f537d96d436"
+    },
+    {
+      "file": "xing-ai/houses.png",
+      "bytes": 1441112,
+      "sha256": "d3c2d2cc6bd3cfc98ea6cb28220dafd71e3715b02d72b0f61920713544111cf4"
+    },
+    {
+      "file": "xing-ai/house.png",
+      "bytes": 1014380,
+      "sha256": "ecbcd1304504cc69032e9d8497f1cba9afbafb2717d6d9c0f79a4045249b84cb"
+    },
+    {
+      "file": "xing-ai/wares.png",
+      "bytes": 1186665,
+      "sha256": "11f69f1dca62133b323c93f80c5b99e4c5806f5738cfc52c2fab55227342e16d"
+    },
+    {
+      "file": "hou-ai/overview.png",
+      "bytes": 1335396,
+      "sha256": "8700d8a2f8577d6ab615b7c25ef597b649b308b54be13f1d37dd249801d6dc2f"
+    },
+    {
+      "file": "hou-ai/stone.png",
+      "bytes": 1313990,
+      "sha256": "8ea803719911173335b49d869fcefe1906aac7c5d94f3fa77c9b2fd9bf9569ae"
+    },
+    {
+      "file": "hou-ai/pots.png",
+      "bytes": 1023345,
+      "sha256": "657f9bc8b9b3a6bb8dcde5e827234380cee5685e63fe8404e7ddd5564711c5ab"
+    },
+    {
+      "file": "hou-ai/bronze.png",
+      "bytes": 1286572,
+      "sha256": "7d250a939d3e4b61fdb7b375a18fe4b61b43731b855cd7ee3764c5b6f3567d31"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.topbar .chapters{flex:1;min-width:0;}
+.scene-completion{flex-wrap:wrap;max-width:min(540px,calc(100% - 36px));}
+.strata-scene-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;flex-basis:100%;padding-top:10px;border-top:1px solid #cbbd99;order:1;}
+.strata-scene-actions .strata-world-link{padding:10px 14px;border-radius:6px;background:#46563d;color:#fff9e9;text-decoration:none;font-size:14px;line-height:1.5;}
+.strata-scene-actions small{flex-basis:100%;line-height:1.5;color:#675d49;font-size:12px;}
+.strata-world-pending{color:#675d49;font-size:14px;}
+.strata-scene-actions a:focus-visible,.strata-scene-actions button:focus-visible{outline:3px solid #a77828;outline-offset:3px;}
+.strata-map-return{display:inline-block;margin:0 0 16px;padding:10px 16px;border:1px solid #a6b596;border-radius:20px;color:#405339;background:#f5f4e9;text-decoration:none;}
+.scene-heading>button:first-child{gap:10px;min-height:48px;margin:0 0 18px;padding:8px 18px 8px 12px;border:1px solid #b89a62;border-radius:999px;background:#fff8e6;color:#4e3d22;font-size:16px;font-weight:650;line-height:1;box-shadow:0 8px 18px #5e4b2a24;}
+.scene-heading>button:first-child svg{width:28px;height:28px;}
+#strataWalkFrame{position:fixed;inset:0;z-index:80;width:100%;height:100%;border:0;background:#1c3029;}
+#strataWalkFrame[hidden]{display:none;}
+body.strata-walk-open{overflow:hidden;}

@@ -1,0 +1,12 @@
+{
+  "source": "outputs/motion/guide-reference-v1.mp4",
+  "windowSeconds": [1.5, 4.0],
+  "poseFrames": "outputs/motion/approach-study/poses.json",
+  "reading": "正面走近的画面里，肘角大约在 175° 到 180°，手腕一直留在躯干两侧。2.7 秒之后小腿离开画面，脚的置信度掉到 0，不能当成步幅。下面的角度是按这个观察写到现有骨架上的，并限制手腕和指尖不要穿过衣服。",
+  "cycleRadiansPerSecond": 5.2,
+  "hipRadians": 0.3,
+  "kneeRadians": 0.5,
+  "armDropRadians": 0.24,
+  "armSwingRadians": 0.12,
+  "elbowBendRadians": 0.1
+}

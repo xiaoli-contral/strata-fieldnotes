@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "operationId": "dacaa2e7-c1aa-4877-9641-b89288eec051",
+  "mediaAssetId": "306174ca-f49b-4692-a157-a699ab20f038",
+  "model": "marble-1.1",
+  "prompt": "Interpretive river terrace environment for a Jilin Neolithic teaching scene. A walkable open sandy terrace in the near and middle ground, sparse mixed-height green and ochre grass, earthen bank left, river right, natural overcast light. A tiny hypothetical shelter silhouette may exist only far away on the horizon. The near field is open and reserved for separately placed interactive house and ceramic 3D models. Keep the input image composition and lighting. Educational visualization, not an archaeological photograph.",
+  "sourceImage": "/generated/left-phase1-empty-nearfield-v2.png",
+  "startedAt": "2026-10-03T14:22:37.469Z",
+  "estimatedCredits": 1580,
+  "attempts": [],
+  "progress": "The operation failed. Please try again.",
+  "error": "An error has happened, please retry it."
+}

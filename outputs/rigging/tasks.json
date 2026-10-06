@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "seatedGuide": {
+      "sourceTaskId": "c91904a1-0e6b-4fe1-a6ac-c7cf646a44df",
+      "sourceModel": "/generated/nearfield/seatedGuide-v1.glb",
+      "check": {
+        "taskId": "4a3c946d-aef0-4abd-a30d-c3450c913c9e",
+        "status": "ready",
+        "submittedAt": "2026-10-04T09:51:01.587Z",
+        "progress": 100,
+        "completedAt": "2026-10-04T09:51:19.967Z",
+        "creditsConsumed": 0,
+        "riggable": false,
+        "rigType": "biped",
+        "output": {
+          "riggable": false,
+          "rig_type": "biped",
+          "topology": "biped"
+        }
+      },
+      "rig": null
+    },
+    "standingGuide": {
+      "sourceTaskId": "fc8372cb-f757-4fed-9ba9-4f8cbb2c1ff3",
+      "sourceModel": "/generated/nearfield/standingGuide-v1.glb",
+      "check": {
+        "taskId": "4e24bb7c-8a0b-4bb9-b12e-8de51ff754f0",
+        "status": "ready",
+        "submittedAt": "2026-10-04T09:57:35.027Z",
+        "progress": 100,
+        "completedAt": "2026-10-04T09:57:59.749Z",
+        "creditsConsumed": 0,
+        "riggable": true,
+        "rigType": "biped",
+        "output": {
+          "riggable": true,
+          "rig_type": "biped",
+          "topology": "biped"
+        }
+      },
+      "rig": {
+        "taskId": "42bf73fd-4759-4dba-a5ff-51ba56031518",
+        "status": "ready",
+        "modelVersion": "v2.5-20260210",
+        "estimatedCredits": 25,
+        "submittedAt": "2026-10-04T09:58:28.898Z",
+        "progress": 100,
+        "completedAt": "2026-10-04T09:58:57.003Z",
+        "creditsConsumed": 25,
+        "modelBytes": 6511012,
+        "modelUrl": "/generated/rigging/standingGuide-rigged-v1.glb",
+        "previewBytes": 133344,
+        "preview": "/generated/rigging/standingGuide-rigged-preview-v1.png"
+      },
+      "motion": {
+        "taskId": "1a6d37ea-c1a5-408b-8d15-844e37765163",
+        "status": "failed",
+        "animations": [
+          "preset:idle",
+          "preset:walk"
+        ],
+        "animateInPlace": true,
+        "estimatedCredits": 20,
+        "submittedAt": "2026-10-04T10:15:18.066Z",
+        "progress": 100,
+        "error": "failed"
+      },
+      "motionTrials": {
+        "walk": {
+          "taskId": "2ddc9572-a9bd-4fe5-a360-0c1b9551438f",
+          "status": "failed",
+          "animation": "preset:walk",
+          "estimatedCredits": 10,
+          "submittedAt": "2026-10-04T10:18:33.098Z",
+          "progress": 100,
+          "error": "failed"
+        },
+        "walkAliasRetry": {
+          "taskId": "2c847d23-8949-490c-80ae-b859a275e748",
+          "status": "failed",
+          "animation": "preset:biped:walk",
+          "estimatedCredits": 10,
+          "traceId": "e2d77d2f-41ce-48be-badc-7c4d09682085",
+          "note": "最小必需参数重试；提交时间见 API 任务 create_time",
+          "progress": 100,
+          "error": "failed",
+          "errorCode": 1004,
+          "creditsConsumed": 0,
+          "completedAt": "2026-10-05T10:24:29.494Z"
+        }
+      }
+    }
+  }
+}

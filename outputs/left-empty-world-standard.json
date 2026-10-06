@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "operationId": "1a748e4d-3848-431e-8fae-9abfa1815122",
+  "mediaAssetId": "62ca9c41-73c3-4519-998c-8f36ae80df37",
+  "model": "marble-1.1",
+  "prompt": "Interpretive river terrace environment plate for a Jilin Neolithic archaeological teaching scene. Keep the near and middle ground as open, compacted sandy alluvial soil with sparse varied olive/yellow-green wild grass, a gently rising earthen bank to the left, river and reed-fringed bank to the right, natural overcast light. Preserve a broad empty walkable area near the camera for separately placed 3D objects. No buildings, roofs, huts, jars, pottery, people, baskets, tools, racks, firepits, paths or modern objects in the near or middle ground. Do not invent architectural remains. This is an educational visualization, not a claim of original appearance.",
+  "sourceImage": "/generated/left-phase1-empty-nearfield-v1.png",
+  "startedAt": "2026-10-03T14:16:31.769Z",
+  "estimatedCredits": 1580,
+  "attempts": [],
+  "progress": "The operation failed. Please try again.",
+  "error": "An error has happened, please retry it."
+}
